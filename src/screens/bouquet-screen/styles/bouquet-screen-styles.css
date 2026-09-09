@@ -1,0 +1,489 @@
+.bouquet-screen-container {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.bouquet-hero {
+    position: relative;
+    width: 100%;
+    background-color: var(--af-pink-base, #d98a9e);
+    overflow: hidden;
+    padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.5rem, 6vw, 5.5rem) clamp(3.5rem, 6vw, 5rem);
+}
+
+.bouquet-hero-content {
+    position: relative;
+    z-index: 5;
+    max-width: 760px;
+}
+
+.bouquet-hero-title {
+    font-family: var(--af-font-family);
+    font-size: clamp(2.1rem, 4.2vw, 3.4rem);
+    font-weight: 600;
+    line-height: 1.15;
+    color: #ffffff;
+    letter-spacing: -0.05em;
+}
+
+.bouquet-hero-subtitle {
+    margin-top: 1.25rem;
+    font-family: var(--af-font-family);
+    font-size: clamp(0.95rem, 1.35vw, 1.1rem);
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 540px;
+}
+
+.bouquet-hero-deco {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.bouquet-deco--top-left {
+    top: -60px;
+    left: -50px;
+    width: clamp(200px, 26vw, 340px);
+    height: auto;
+}
+
+.bouquet-deco--top-right {
+    top: -40px;
+    right: -30px;
+    width: clamp(240px, 30vw, 400px);
+    height: auto;
+}
+
+.bouquet-deco--bottom-right {
+    bottom: -70px;
+    right: 10%;
+    width: clamp(220px, 28vw, 360px);
+    height: auto;
+}
+
+.bouquet-container-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.bouquet-spotlight-section {
+    width: 100%;
+    background: linear-gradient(180deg, #fffdfa 0%, #fef8f3 100%);
+    padding: clamp(2.5rem, 4vw, 3.75rem) clamp(1.5rem, 6vw, 5.5rem);
+    border-bottom: 1px solid rgba(217, 194, 166, 0.35);
+}
+
+.bouquet-section-header,
+.bouquet-catalog-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.bouquet-section-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.bouquet-section-badge {
+    display: inline-block;
+    font-family: var(--af-font-family);
+    font-size: 0.76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--af-pink-base, #d98a9e);
+    margin-bottom: 0.2rem;
+}
+
+.bouquet-section-title {
+    font-family: var(--af-font-family);
+    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+    font-weight: 800;
+    color: #845731;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.bouquet-section-subtitle {
+    font-family: var(--af-font-family);
+    font-size: clamp(0.88rem, 1.2vw, 0.98rem);
+    font-weight: 500;
+    color: #9c8065;
+    margin-top: 0.25rem;
+    max-width: 540px;
+}
+
+.bouquet-slider-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.bouquet-drag-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--af-font-family);
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: #93704f;
+    background: #fbf5eb;
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid rgba(217, 194, 166, 0.5);
+    letter-spacing: 0.02em;
+    user-select: none;
+}
+
+.bouquet-arrow-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.bouquet-arrow-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f4e7d4;
+    border: 1px solid rgba(217, 194, 166, 0.5);
+    color: #845731;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.bouquet-arrow-btn:hover:not(:disabled) {
+    background: #8d7249;
+    color: #ffffff;
+    border-color: #8d7249;
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(141, 114, 73, 0.25);
+}
+
+.bouquet-arrow-btn:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.bouquet-arrow-btn:focus-visible {
+    outline: 2px solid var(--af-pink-base, #d98a9e);
+    outline-offset: 2px;
+}
+
+.bouquet-arrow-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.bouquet-carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0.5rem 0.25rem 1.25rem;
+    touch-action: pan-y;
+}
+
+.bouquet-carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    cursor: grab;
+    user-select: none;
+    will-change: transform;
+}
+
+.bouquet-carousel-track:active {
+    cursor: grabbing;
+}
+
+.bouquet-carousel-track .bouquet-card {
+    flex: 0 0 310px;
+    width: 310px;
+    max-width: 84vw;
+}
+
+.bouquet-carousel-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+}
+
+.bouquet-progress-track {
+    flex: 1;
+    height: 6px;
+    background: #f2e4d0;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.bouquet-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #d98a9e 0%, #8d7249 100%);
+    border-radius: 999px;
+    transition: width 0.15s ease-out;
+}
+
+.bouquet-catalog-section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: clamp(2.5rem, 4vw, 4rem) clamp(1.5rem, 6vw, 5.5rem) clamp(4rem, 6vw, 6rem);
+    flex: 1;
+}
+
+.bouquet-filters {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.bouquet-filter-btn {
+    border: none;
+    outline: none;
+    padding: 0.65rem 1.4rem;
+    border-radius: 999px;
+    font-family: var(--af-font-family);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.bouquet-filter-btn--active {
+    background-color: #8d7249;
+    color: #ffffff;
+    box-shadow: 0 3px 10px rgba(141, 114, 73, 0.25);
+}
+
+.bouquet-filter-btn--inactive {
+    background-color: #f4e7d4;
+    color: #8a6c42;
+}
+
+.bouquet-filter-btn--inactive:hover {
+    background-color: #ebdcc5;
+    transform: translateY(-1px);
+}
+
+.bouquet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.25rem, 2.5vw, 2.25rem);
+}
+
+.bouquet-grid .bouquet-card {
+    width: 100%;
+    max-width: none;
+    flex: 1 1 auto;
+}
+
+.bouquet-card {
+    position: relative;
+    background-color: #f4e7d4;
+    border-radius: 24px;
+    padding: clamp(1.75rem, 3vw, 2.25rem) clamp(1.25rem, 2vw, 1.75rem) clamp(1.5rem, 2.5vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(160, 130, 95, 0.08);
+    border: 1px solid rgba(217, 194, 166, 0.38);
+    cursor: pointer;
+    transition: box-shadow 0.25s ease, border-color 0.25s ease;
+    user-select: none;
+    outline: none;
+}
+
+.bouquet-card:hover {
+    box-shadow: 0 14px 34px rgba(132, 87, 49, 0.16);
+    border-color: rgba(217, 138, 158, 0.5);
+}
+
+.bouquet-card:focus-visible {
+    box-shadow: 0 0 0 3px var(--af-pink-base, #d98a9e);
+}
+
+.bouquet-card-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1.25rem;
+    background: rgba(217, 138, 158, 0.92);
+    color: #ffffff;
+    font-family: var(--af-font-family);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    letter-spacing: 0.03em;
+    box-shadow: 0 2px 6px rgba(217, 138, 158, 0.25);
+    z-index: 2;
+}
+
+.bouquet-card-image-wrapper {
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    pointer-events: none;
+}
+
+.bouquet-card-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.bouquet-card:hover .bouquet-card-image {
+    transform: scale(1.06) rotate(2deg);
+}
+
+.bouquet-card-title {
+    font-family: var(--af-font-family);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #845731;
+    margin-bottom: 0.35rem;
+    line-height: 1.25;
+}
+
+.bouquet-card-subtitle {
+    font-family: var(--af-font-family);
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: #a48263;
+    margin-bottom: 1rem;
+}
+
+.bouquet-card-divider {
+    width: 85%;
+    height: 1px;
+    background-color: #dfc8af;
+    border: none;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.bouquet-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0.25rem;
+}
+
+.bouquet-card-price {
+    font-family: var(--af-font-family);
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #845731;
+}
+
+.bouquet-card-view-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: var(--af-font-family);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--af-pink-base, #d98a9e);
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(217, 138, 158, 0.35);
+    padding: 0.4rem 0.85rem;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+}
+
+.bouquet-card:hover .bouquet-card-view-btn {
+    background-color: var(--af-pink-base, #d98a9e);
+    color: #ffffff;
+    border-color: var(--af-pink-base, #d98a9e);
+    transform: translateX(2px);
+}
+
+@media (max-width: 1024px) {
+    .bouquet-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .bouquet-section-header,
+    .bouquet-catalog-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .bouquet-slider-nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .bouquet-filters {
+        width: 100%;
+    }
+
+    .bouquet-filter-btn {
+        flex: 1;
+        text-align: center;
+    }
+
+    .bouquet-carousel-track .bouquet-card {
+        flex: 0 0 280px;
+        width: 280px;
+    }
+
+    .bouquet-card-image-wrapper {
+        height: 220px;
+    }
+}
+
+@media (max-width: 640px) {
+    .bouquet-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bouquet-hero {
+        padding: 2.25rem 1.25rem 2.75rem;
+    }
+
+    .bouquet-spotlight-section {
+        padding: 2rem 1.25rem 2.5rem;
+    }
+
+    .bouquet-catalog-section {
+        padding: 2rem 1.25rem 3.5rem;
+    }
+
+    .bouquet-drag-hint span {
+        font-size: 0.72rem;
+    }
+}

@@ -1,0 +1,380 @@
+.home-page-container {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    background-color: var(--af-pink-base);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(1.5rem, 4vh, 3rem) 0;
+}
+
+.home-decoration {
+    position: absolute;
+    pointer-events: none;
+}
+
+.home-decoration--top {
+    top: -60px;
+    right: -80px;
+    width: clamp(300px, 45vw, 620px);
+    height: clamp(300px, 45vw, 620px);
+}
+
+.home-decoration--bottom {
+    bottom: -160px;
+    left: -140px;
+    width: clamp(300px, 45vw, 620px);
+    height: clamp(300px, 45vw, 620px);
+}
+
+.deco-sakura {
+    position: absolute;
+    height: auto;
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+}
+
+.deco-sakura--1 {
+    width: clamp(340px, 50vw, 750px);
+    bottom: clamp(-400px, -25vw, -200px);
+    right: 20px;
+    transform: rotate(8deg);
+}
+
+.deco-sakura--3 {
+    width: clamp(240px, 35vw, 450px);
+    bottom: clamp(100px, 25vh, 300px);
+    left: -30px;
+    transform: rotate(-6deg) scaleX(-1);
+}
+
+.deco-sakura--2 {
+    width: clamp(180px, 28vw, 360px);
+    bottom: clamp(250px, 40vh, 500px);
+    left: clamp(80px, 20vw, 320px);
+    opacity: 0.35;
+    transform: rotate(20deg);
+}
+
+.home-content {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    max-width: 900px;
+    padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 5vw, 3.5rem);
+}
+
+.home-content--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.home-centerpiece-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: clamp(1.1rem, 2.5vh, 1.85rem);
+}
+
+.home-centerpiece-halo {
+    position: absolute;
+    width: clamp(170px, 24vw, 240px);
+    height: clamp(170px, 24vw, 240px);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.42) 0%, rgba(217, 138, 158, 0.15) 70%, transparent 100%);
+    filter: blur(14px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.home-icon-orb {
+    position: relative;
+    z-index: 2;
+    width: clamp(125px, 18vw, 175px);
+    height: clamp(125px, 18vw, 175px);
+    border-radius: 50%;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.38) 0%, rgba(255, 255, 255, 0.16) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 16px 36px rgba(120, 25, 50, 0.22), inset 0 2px 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-icon-orb:hover {
+    border-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 22px 48px rgba(120, 25, 50, 0.3), inset 0 2px 14px rgba(255, 255, 255, 0.7);
+}
+
+.home-main-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.home-main-icon {
+    font-size: clamp(3.2rem, 5.2vw, 4.6rem);
+    filter: drop-shadow(0 8px 16px rgba(100, 20, 40, 0.25));
+    user-select: none;
+    line-height: 1;
+    display: block;
+}
+
+.home-orbit-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(28px, 3.8vw, 34px);
+    height: clamp(28px, 3.8vw, 34px);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(217, 194, 166, 0.65);
+    box-shadow: 0 4px 12px rgba(100, 20, 40, 0.14);
+    font-size: clamp(0.85rem, 1.2vw, 1.05rem);
+    backdrop-filter: blur(4px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.home-orbit-icon--tl {
+    top: -2px;
+    left: 8px;
+}
+
+.home-orbit-icon--tr {
+    top: 4px;
+    right: 6px;
+}
+
+.home-orbit-icon--bl {
+    bottom: 6px;
+    left: 6px;
+}
+
+.home-orbit-icon--br {
+    bottom: -2px;
+    right: 10px;
+}
+
+.home-floating-chip {
+    position: absolute;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.42rem 0.95rem;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 1.5px solid rgba(217, 194, 166, 0.6);
+    box-shadow: 0 6px 18px rgba(100, 20, 40, 0.14);
+    font-family: var(--af-font-family);
+    font-size: clamp(0.72rem, 1.2vw, 0.8rem);
+    font-weight: 700;
+    color: #845731;
+    white-space: nowrap;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+}
+
+.home-floating-chip--left {
+    left: clamp(-45px, -6vw, -15px);
+    top: 18%;
+}
+
+.home-floating-chip--right {
+    right: clamp(-45px, -6vw, -15px);
+    bottom: 18%;
+}
+
+.chip-emoji {
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+.home-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.42rem 1.15rem;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-family: var(--af-font-family);
+    font-size: clamp(0.76rem, 1.3vw, 0.84rem);
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 4px 14px rgba(100, 20, 40, 0.08);
+}
+
+.home-hero-title {
+    font-family: var(--af-font-family);
+    font-size: clamp(2.3rem, 5.2vw, 3.8rem);
+    font-weight: 600;
+    line-height: 1.12;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    text-shadow: 0 3px 18px rgba(120, 25, 50, 0.25);
+    margin-bottom: 0.65rem;
+}
+
+.home-hero-tagline {
+    font-family: var(--af-font-karla, "Karla", "Segoe UI", sans-serif);
+    font-size: clamp(1.02rem, 1.9vw, 1.2rem);
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.55;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 0 1px 8px rgba(120, 25, 50, 0.15);
+}
+
+.home-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-top: clamp(1.35rem, 3.5vw, 2rem);
+}
+
+.home-actions--centered {
+    justify-content: center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0.85rem 1.75rem;
+    font-family: var(--af-font-family);
+    font-weight: 700;
+    font-size: clamp(0.82rem, 1.2vw, 0.88rem);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 999px;
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        filter 0.18s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(1.05);
+    transform: translateY(-2px);
+}
+
+.btn:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+.btn--primary {
+    background-color: var(--af-cream, #efe4d2);
+    color: #4a3f2c;
+    border: 1.5px solid rgba(217, 194, 166, 0.8);
+    box-shadow: 0 6px 18px rgba(100, 20, 40, 0.14);
+}
+
+.btn--primary:hover {
+    background-color: #f7ede0;
+    box-shadow: 0 10px 24px rgba(100, 20, 40, 0.22);
+}
+
+.btn--secondary {
+    background-color: var(--af-olive, #7c8f52);
+    color: #fff;
+    border: 1.5px solid rgba(124, 143, 82, 0.8);
+    box-shadow: 0 6px 18px rgba(100, 20, 40, 0.14);
+}
+
+.btn--secondary:hover {
+    background-color: #8da25d;
+    box-shadow: 0 10px 24px rgba(100, 20, 40, 0.22);
+}
+
+@media (max-width: 768px) {
+    .deco-sakura {
+        opacity: 0.35;
+    }
+
+    .home-floating-chip {
+        padding: 0.32rem 0.75rem;
+        font-size: 0.72rem;
+    }
+
+    .home-floating-chip--left {
+        left: -10px;
+    }
+
+    .home-floating-chip--right {
+        right: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.88rem 1.25rem;
+    }
+
+    .home-floating-chip--left {
+        left: -8px;
+        top: 10%;
+    }
+
+    .home-floating-chip--right {
+        right: -8px;
+        bottom: 10%;
+    }
+
+    .home-decoration--top,
+    .home-decoration--bottom {
+        width: 260px;
+        height: 260px;
+    }
+
+    .deco-sakura--1 {
+        bottom: -150px;
+        right: -30px;
+        opacity: 0.25;
+    }
+
+    .deco-sakura--2 {
+        display: none;
+    }
+
+    .deco-sakura--3 {
+        bottom: 40px;
+        left: -30px;
+        opacity: 0.25;
+    }
+}

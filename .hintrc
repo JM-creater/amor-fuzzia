@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-webkit-text-size-adjust",
+          "user-select",
+          "text-wrap",
+          "text-wrap: pretty",
+          "overflow-x: clip",
+          "scrollbar-width",
+          "scrollbar-color",
+          "scrollbar-width: thin",
+          "overscroll-behavior",
+          "overscroll-behavior: contain",
+          "-webkit-user-drag",
+          "backdrop-filter",
+          "-webkit-overflow-scrolling",
+          "min-height: auto"
+        ]
+      }
+    ],
+    "css-prefix-order": "off"
+  }
+}
