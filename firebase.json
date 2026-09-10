@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "amor-fuzzia-011",
     "public": "dist",
     "ignore": [
       "firebase.json",
