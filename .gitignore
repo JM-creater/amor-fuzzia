@@ -28,3 +28,6 @@ dist-ssr
 
 # task folder
 /src/tasks/
+
+# firebase folder cache
+.firebase/
