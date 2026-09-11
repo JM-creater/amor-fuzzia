@@ -1,182 +1,174 @@
-import pinkRoseImg from "../screens/bouquet-screen/assets/pink-rose-bouquet.png";
+import bouquetLargeBlue1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_blue_1.jpg";
+import bouquetLargePink1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_pink_1.jpg";
+import bouquetLargePurple1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_purple_1.jpg";
+import bouquetLargePurpleWhite1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_purple_white_1.jpg";
+import bouquetLargeRed1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_red_1.jpg";
+import bouquetLargeRed2 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_red_2.jpg";
+import bouquetLargeYellow1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_yellow_1.jpg";
+import bouquetLargeYellow2 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_yellow_2.jpg";
+import bouquetLargeYellow3 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_yellow_3.jpg";
+import bouquetLargeYellow4 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_yellow_4.jpg";
+import bouquetLargeYellow5 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_large_yellow_5.jpg";
+
+import bouquetSmallPink1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_pink_1.jpg";
+import bouquetSmallPurple1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_purple_1.jpg";
+import bouquetSmallTulips1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_tulips_1.jpg";
+import bouquetSmallTulips2 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_tulips_2.jpg";
+import bouquetSmallTulips3 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_tulips_3.jpg";
+import bouquetSmallYellow1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_yellow_1.jpg";
+import bouquetSmallYellowSunflower1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_yellow_sunflower_1.jpg";
 
 export const HOME_PAGE = "/";
 export const AMOR_FUZZIA = "AMor Fuzzia";
 
+export const HANDMADE_BOUQUET_MATERIALS = [
+  { name: "Fuzzy Wire", note: "Plush, flexible wire stems shaping each petal & leaf" },
+  { name: "Pong Pong Balls", note: "Decorative plush accents & flower cores" },
+  { name: "Tissue Paper", note: "Delicate inner layering for volume and texture" },
+  { name: "Snow Dots", note: "Textured dot detailing & decorative accents" },
+  { name: "Fish Tail Ribbon", note: "Premium accent bow with fish tail cut" },
+  { name: "Pearls", note: "Elegant pearl adornments nestled among blooms" },
+  { name: "Plastic Wrapper", note: "Protective, frosted aesthetic outer wrapper" },
+  { name: "Honey Comb Paper", note: "Artisan textured wrapper layer" },
+];
+
 export const BOUQUET_PRODUCTS = [
+  // ! commented out because of the image is not 
+  // {
+  //   id: 1,
+  //   name: "Classic Pink Rose Bouquet",
+  //   subtitle: "Single Stem Fuzzy Rose Bloom",
+  //   price: "₱150",
+  //   image: bouquetLargePink1,
+  //   isLatest: true,
+  //   tag: "New",
+  //   description:
+  //     "A timeless single-stem pink rose handcrafted with velvety plush fuzzy wire. Each petal is individually shaped and arranged by hand to create an everlasting keepsake. Perfect for thoughtful surprises, anniversaries, graduations, or a sweet desk companion.",
+  //   materials: HANDMADE_BOUQUET_MATERIALS,
+  //   details: {
+  //     dimensions: "approx. 32 cm (H) × 14 cm (W)",
+  //     craftTime: "1.5 – 2 Hours of handcrafting",
+  //     bloomType: "Single Rose with Double Leaf Sprig",
+  //   },
+  // },
   {
     id: 1,
-    name: "Classic Pink Rose Bouquet",
-    subtitle: "Single Stem Fuzzy Rose Bloom",
-    price: "₱150",
-    image: pinkRoseImg,
+    name: "Sunburst Sunflower Bouquet",
+    subtitle: "Bright Yellow Handcrafted Bloom",
+    price: "₱50",
+    image: bouquetSmallYellowSunflower1,
     isLatest: true,
-    tag: "Bestseller",
+    tag: "New",
     description:
-      "A timeless single-stem pink rose handcrafted with velvety plush chenille stems and soft milk cotton yarn. Each petal is individually shaped and arranged by hand to create an everlasting bloom that never wilts. Perfect for thoughtful surprises, anniversaries, graduations, or a sweet desk companion.",
-    materials: [
-      { name: "Premium Plush Chenille Stems", note: "Soft velvet feel, vibrant blush pink & rose tones" },
-      { name: "High-Grade Milk Cotton Yarn", note: "Hand-wrapped detailing on base and leaves" },
-      { name: "Flexible Floral Wire Core", note: "Bendable stem structure for custom posing" },
-      { name: "Waterproof Korean Matte Wrapping Paper", note: "Frosted aesthetic wrapper in blush & cream" },
-      { name: "Double-Faced Satin Ribbon Bow", note: "Elegant matching ribbon accent" },
-    ],
+      "Vibrant yellow sunflower handcrafted from bendable fuzzy wire with pong pong ball center and honeycomb paper wrapping.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
     details: {
-      dimensions: "approx. 32 cm (H) × 14 cm (W)",
+      dimensions: "approx. 30 cm (H) × 14 cm (W)",
       craftTime: "1.5 – 2 Hours of handcrafting",
-      bloomType: "Single Rose with Double Leaf Sprig",
-      lifespan: "Everlasting (No water or sunlight needed)",
+      bloomType: "Sunflower Bloom with Duo Leaves",
     },
-    careTips: [
-      "Keep away from direct moisture, water, and open flames.",
-      "Gently shape the petals with fingers if compressed during transport.",
-      "Lightly dust with a soft brush or cool hairdryer.",
-    ],
-    customization: "Custom wrapper colors and complimentary handwritten note cards available upon order.",
   },
   {
     id: 2,
-    name: "Blush Blossom Bouquet",
-    subtitle: "Pastel Pink & Cream Accents",
-    price: "₱150",
-    image: pinkRoseImg,
+    name: "Lavender Twilight Bouquet",
+    subtitle: "Handcrafted Purple Blossom",
+    price: "₱100",
+    image: bouquetLargePurple1,
     isLatest: true,
-    tag: "New Arrival",
+    tag: "New",
     description:
-      "Delicate pastel tones crafted for romance and elegance. Made from extra-dense fuzzy pipe cleaners with textured leaf wraps, wrapped in artisan frosted paper with a delicate satin finish.",
-    materials: [
-      { name: "Plush Velvet Chenille Stems", note: "Blush pink, soft cream & matcha green" },
-      { name: "Fine Milk Cotton Yarn", note: "Hand-knit stem wrap" },
-      { name: "Reinforced Floral Wire", note: "Durable internal structure" },
-      { name: "Korean Aesthetic Cellophane & Kraft Wrap", note: "Two-tone layered design" },
-      { name: "Satin Ribbon & Tag", note: "Handcrafted AMor Fuzzia seal" },
-    ],
+      "Delicate purple fuzzy wire blooms adorned with pearl accents and fish tail ribbon, wrapped in layered tissue and frosted plastic wrapper.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
     details: {
       dimensions: "approx. 32 cm (H) × 14 cm (W)",
       craftTime: "1.5 – 2 Hours of handcrafting",
-      bloomType: "Rose Bloom with Duo Leaves",
-      lifespan: "Everlasting (No water needed)",
+      bloomType: "Sculpted Purple Bloom",
     },
-    careTips: [
-      "Keep indoors away from humidity and high heat.",
-      "Dust gently using a dry soft brush when needed.",
-    ],
-    customization: "Ribbon color and greeting message can be customized.",
   },
   {
     id: 3,
-    name: "Sweetheart Rose Bouquet",
-    subtitle: "Hand-hooked Velvet Rose",
-    price: "₱150",
-    image: pinkRoseImg,
-    isLatest: false,
-    tag: "Popular",
+    name: "Pastel Tulip Trio",
+    subtitle: "Handmade Spring Tulips",
+    price: "₱35",
+    image: bouquetSmallTulips1,
+    isLatest: true,
+    tag: "New",
     description:
-      "Handcrafted with extra love and precision, featuring layered rose petals that give a full, plush appearance. Ideal for Valentine's, Mother's Day, or showing gratitude to someone dear.",
-    materials: [
-      { name: "Ultra-Soft Chenille Stems", note: "Vibrant and fade-resistant dyes" },
-      { name: "Organic Cotton Yarn", note: "Seamless stem binding" },
-      { name: "Galvanized Floral Wire", note: "Anti-rust and flexible" },
-      { name: "Pearl Gloss Wrapper", note: "Premium textured wrapping" },
-      { name: "Chiffon Ribbon", note: "Airy, romantic bow finish" },
-    ],
+      "Charming handcrafted tulips made with soft fuzzy wire stems, snow dots accents, and honeycomb paper.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
     details: {
-      dimensions: "approx. 30 cm (H) × 13 cm (W)",
-      craftTime: "1.5 Hours of handcrafting",
-      bloomType: "Full Bloom Single Rose",
-      lifespan: "Everlasting keepsake",
+      dimensions: "approx. 28 cm (H) × 12 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Trio Tulip Sprig",
     },
-    careTips: [
-      "Avoid submerging in liquids.",
-      "Store in a cool, dry place out of intense direct sunlight.",
-    ],
-    customization: "Available with complimentary custom gift tag.",
   },
   {
     id: 4,
-    name: "Petite Fuzzy Rose Bouquet",
-    subtitle: "Handmade Single Bloom",
-    price: "₱150",
-    image: pinkRoseImg,
-    isLatest: false,
-    tag: "Classic",
+    name: "Royal Azure Bouquet",
+    subtitle: "Vibrant Blue Artisan Arrangement",
+    price: "₱100",
+    image: bouquetLargeBlue1,
+    isLatest: true,
+    tag: "New",
     description:
-      "A charming single flower designed to brighten any corner of a room. Made entirely by hand with soft-to-the-touch fuzzy stems that keep their shape for years to come.",
-    materials: [
-      { name: "Premium Chenille Pipe Cleaners", note: "Fluffy and dense texture" },
-      { name: "Green Floral Binding Yarn", note: "Smooth leaf attachment" },
-      { name: "Bendable Craft Wire", note: "Sturdy floral core" },
-      { name: "Eco Kraft & Frosted Paper", note: "Minimalist aesthetic wrapping" },
-      { name: "Cotton Twine & Satin Ribbon", note: "Rustic-modern bow" },
-    ],
-    details: {
-      dimensions: "approx. 30 cm (H) × 12 cm (W)",
-      craftTime: "1.5 Hours of handcrafting",
-      bloomType: "Single Stem Rose",
-      lifespan: "Everlasting",
-    },
-    careTips: [
-      "Keep dry and dust occasionally.",
-    ],
-    customization: "Special dedication cards included upon request.",
-  },
-  {
-    id: 5,
-    name: "Enchanted Rose Bouquet",
-    subtitle: "Artisan Fuzzy Flora",
-    price: "₱150",
-    image: pinkRoseImg,
-    isLatest: false,
-    tag: "Artisan Choice",
-    description:
-      "A captivating floral design crafted with intricate petal layering for a realistic yet whimsical look. Designed as a cherished keepsake for special celebrations.",
-    materials: [
-      { name: "High-Density Chenille Wire Stems", note: "Rich velvety feel" },
-      { name: "Milk Cotton Yarn", note: "Delicate leaf veins and stem" },
-      { name: "Floral Support Wire", note: "Firm upright posture" },
-      { name: "Korean Translucent Wrapping", note: "Water-resistant frosted look" },
-      { name: "Satin Accent Ribbon", note: "Coordinated pastel pink" },
-    ],
+      "Bold blue handmade fuzzy wire blooms accented with pearls, snow dots, and fish tail ribbon in an aesthetic waterproof wrapper.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
     details: {
       dimensions: "approx. 33 cm (H) × 15 cm (W)",
       craftTime: "2 Hours of handcrafting",
-      bloomType: "Sculpted Rose & Double Leaves",
-      lifespan: "Everlasting keepsake",
+      bloomType: "Full Arrangement",
     },
-    careTips: [
-      "Handle gently by the stem or base.",
-      "Keep away from direct heat sources.",
-    ],
-    customization: "Ribbon & wrapping customization available.",
+  },
+  {
+    id: 5,
+    name: "Crimson Romance Bouquet",
+    subtitle: "Deep Red Fuzzy Wire Roses",
+    price: "₱150",
+    image: bouquetLargeRed1,
+    isLatest: true,
+    tag: "New",
+    description:
+      "Stunning deep red fuzzy wire rose arrangement embellished with pong pong balls and finished with an elegant ribbon.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 33 cm (H) × 15 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Signature Rose Bloom",
+    },
   },
   {
     id: 6,
-    name: "Fuzzy Blossom Deluxe",
-    subtitle: "Signature Pink Floral Design",
-    price: "₱150",
-    image: pinkRoseImg,
-    isLatest: false,
-    tag: "Signature",
+    name: "Golden Sunshine Bouquet",
+    subtitle: "Lush Yellow Fuzzy Wire Florals",
+    price: "₱100",
+    image: bouquetLargeYellow1,
+    isLatest: true,
+    tag: "New",
     description:
-      "Our signature handmade fuzzy rose bouquet, perfected through countless hours of craft. Makes a warm, memorable gift that expresses love and thoughtfulness.",
-    materials: [
-      { name: "Soft Chenille Pipe Cleaners", note: "100% skin-safe & durable" },
-      { name: "Milk Cotton Threading", note: "Hand-bound stem finish" },
-      { name: "Flexible Floral Core", note: "Adjustable arrangement" },
-      { name: "Embossed Bouquet Wrapper", note: "Deluxe frosted paper" },
-      { name: "Signature Satin Ribbon", note: "Premium finish" },
-    ],
+      "An energizing large bouquet of handcrafted yellow florals, wrapped in premium tissue paper, honeycomb paper, and fish tail ribbon.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 35 cm (H) × 16 cm (W)",
+      craftTime: "2.5 Hours of handcrafting",
+      bloomType: "Large Multi-Bloom Arrangement",
+    },
+  },
+  {
+    id: 7,
+    name: "Violet & Ivory Blossom",
+    subtitle: "Two-Tone Handcrafted Elegance",
+    price: "₱100",
+    image: bouquetLargePurpleWhite1,
+    isLatest: true,
+    tag: "New",
+    description:
+      "A delicate harmony of rich purple and soft ivory fuzzy wire flowers, accented with pearls and frosted plastic wrapper.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
     details: {
       dimensions: "approx. 32 cm (H) × 14 cm (W)",
-      craftTime: "1.5 – 2 Hours of handcrafting",
-      bloomType: "Signature Rose Bloom",
-      lifespan: "Permanent / Everlasting",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Dual-Tone Bouquet",
     },
-    careTips: [
-      "No watering or maintenance needed.",
-      "Light dusting preserves freshness.",
-    ],
-    customization: "Personalized greeting message included for free.",
   },
 ];
 
