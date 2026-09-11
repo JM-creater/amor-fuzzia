@@ -30,7 +30,7 @@ export const BouquetScreen = () => {
   const x = useMotionValue(0);
 
   const SPOTLIGHT_BOUQUETS = BOUQUET_PRODUCTS.filter(
-    (b) => b.isLatest || b.tag === "Bestseller" || b.tag === "Popular",
+    (b) => b.isLatest || b.tag === "New",
   );
 
   const filteredCatalog =
@@ -388,7 +388,8 @@ export const BouquetScreen = () => {
                 >
                   All ({BOUQUET_PRODUCTS.length})
                 </button>
-                <button
+                {/* Commented out it is not yet included */}
+                {/* <button
                   role="tab"
                   aria-selected={activeFilter === "bestseller"}
                   className={`bouquet-filter-btn ${activeFilter === "bestseller"
@@ -398,7 +399,7 @@ export const BouquetScreen = () => {
                   onClick={() => setActiveFilter("bestseller")}
                 >
                   Bestsellers
-                </button>
+                </button> */}
                 <button
                   role="tab"
                   aria-selected={activeFilter === "latest"}
@@ -408,7 +409,7 @@ export const BouquetScreen = () => {
                     }`}
                   onClick={() => setActiveFilter("latest")}
                 >
-                  New Arrivals
+                  New
                 </button>
               </div>
             </div>

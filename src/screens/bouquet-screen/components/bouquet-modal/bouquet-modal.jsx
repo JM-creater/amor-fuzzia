@@ -104,7 +104,9 @@ export const BouquetModal = ({ bouquet, onClose }) => {
                     <div className="modal-highlight-item">
                       <span className="highlight-icon">⏱️</span>
                       <span className="highlight-label">
-                        {bouquet.details?.craftTime ? bouquet.details.craftTime.split(" ")[0] + " Craft" : "1.5h Craft"}
+                        {bouquet.details?.craftTime
+                          ? bouquet.details.craftTime.split(" ")[0] + " Craft"
+                          : "1.5h Craft"}
                       </span>
                     </div>
                   </div>
@@ -115,20 +117,27 @@ export const BouquetModal = ({ bouquet, onClose }) => {
                     <span className="bouquet-modal-brand-label">
                       AMor Fuzzia • Handcrafted Florals
                     </span>
-                    <h2 id="modal-bouquet-title" className="bouquet-modal-title">
+                    <h2
+                      id="modal-bouquet-title"
+                      className="bouquet-modal-title"
+                    >
                       {bouquet.name}
                     </h2>
                     <p className="bouquet-modal-subtitle">{bouquet.subtitle}</p>
 
                     <div className="bouquet-modal-price-wrap">
-                      <span className="bouquet-modal-price">{bouquet.price}</span>
+                      <span className="bouquet-modal-price">
+                        {bouquet.price}
+                      </span>
                       <span className="bouquet-modal-price-note">
                         Hand-hooked to order
                       </span>
                     </div>
                   </div>
 
-                  <p className="bouquet-modal-description">{bouquet.description}</p>
+                  <p className="bouquet-modal-description">
+                    {bouquet.description}
+                  </p>
 
                   <div className="bouquet-modal-section bouquet-materials-section">
                     <div className="section-title-wrap">
@@ -154,25 +163,37 @@ export const BouquetModal = ({ bouquet, onClose }) => {
                     <div className="bouquet-modal-section bouquet-specs-section">
                       <div className="section-title-wrap">
                         <span className="section-icon">📏</span>
-                        <h3 className="section-heading">Details & Dimensions</h3>
+                        <h3 className="section-heading">
+                          Details & Dimensions
+                        </h3>
                       </div>
                       <div className="specs-list">
                         <div className="spec-item">
                           <span className="spec-key">Size</span>
-                          <span className="spec-val">{bouquet.details.dimensions}</span>
+                          <span className="spec-val">
+                            {bouquet.details.dimensions}
+                          </span>
                         </div>
                         <div className="spec-item">
                           <span className="spec-key">Bloom Style</span>
-                          <span className="spec-val">{bouquet.details.bloomType}</span>
+                          <span className="spec-val">
+                            {bouquet.details.bloomType}
+                          </span>
                         </div>
                         <div className="spec-item">
                           <span className="spec-key">Handcrafting Time</span>
-                          <span className="spec-val">{bouquet.details.craftTime}</span>
+                          <span className="spec-val">
+                            {bouquet.details.craftTime}
+                          </span>
                         </div>
-                        <div className="spec-item">
-                          <span className="spec-key">Durability</span>
-                          <span className="spec-val">{bouquet.details.lifespan}</span>
-                        </div>
+                        {bouquet.details.lifespan && (
+                          <div className="spec-item">
+                            <span className="spec-key">Durability</span>
+                            <span className="spec-val">
+                              {bouquet.details.lifespan}
+                            </span>
+                          </div>
+                        )}
                       </div>
                     </div>
                   )}
