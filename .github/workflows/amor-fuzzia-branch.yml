@@ -1,34 +1,36 @@
-name: AMor Fuzzia Build and Deploy on PR
+name: AMor Fuzzia Build on Branch Push
 
-on: pull_request
+on:
+    push:
+        branches-ignore:
+            - amor-fuzzia-master
+            - main
 
 permissions:
-  checks: write
-  contents: read
-  pull-requests: write
+    checks: write
+    contents: read
 
 jobs:
-  build_and_preview:
-    if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+  build_and_test:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+    
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "22.13.0"
-
+         node-version: "22.13.0"
+    
       - name: Install AMor Fuzzia Dependencies
         run: npm ci
-
+    
       - name: Build AMor Fuzzia
         run: npm run build
-      
+
       - name: Verify build output
         run: ls -la dist/
-      
-      - name: Build Status
-        run: echo "✅ Build successful - Ready to merge!"
+
+      - name: Build Status Summary
+        run: echo "✅ Branch build successful!" 
