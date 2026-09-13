@@ -18,6 +18,15 @@ import bouquetSmallTulips3 from "../screens/bouquet-screen/assets/bouquet-images
 import bouquetSmallYellow1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_yellow_1.jpg";
 import bouquetSmallYellowSunflower1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_yellow_sunflower_1.jpg";
 
+import bouquetOrangeLilyPinkTulip from "../screens/bouquet-screen/assets/bouquet-images/orange-lily-pink-tulip.jpg";
+import bouquetYellowLilyPinkTulip from "../screens/bouquet-screen/assets/bouquet-images/yellow-lily-pink-tulip.jpg";
+import bouquetSunflowerMiniDaisy from "../screens/bouquet-screen/assets/bouquet-images/sunflower-mini-daisy.jpg";
+import bouquetOrangeGerberaPink from "../screens/bouquet-screen/assets/bouquet-images/orange-gerbera-pink.jpg";
+import bouquetOrangeGerberaViolet from "../screens/bouquet-screen/assets/bouquet-images/orange-gerbera-violet.jpg";
+import bouquetBlueBellFlower from "../screens/bouquet-screen/assets/bouquet-images/blue-bellflower.jpg";
+import bouquetLavenderCarnation from "../screens/bouquet-screen/assets/bouquet-images/lavender-carnation.jpg";
+import bouquetYellowLilyBlueTulip from "../screens/bouquet-screen/assets/bouquet-images/yellow-lily-blue-tulip.jpg";
+
 export const HOME_PAGE = "/";
 export const AMOR_FUZZIA = "AMor Fuzzia";
 
@@ -72,7 +81,7 @@ export const BOUQUET_PRODUCTS = [
     id: 2,
     name: "Lavender Twilight Bouquet",
     subtitle: "Handcrafted Purple Blossom",
-    price: "₱100",
+    price: "₱85",
     image: bouquetLargePurple1,
     isLatest: true,
     tag: "New",
@@ -123,7 +132,7 @@ export const BOUQUET_PRODUCTS = [
     id: 5,
     name: "Crimson Romance Bouquet",
     subtitle: "Deep Red Fuzzy Wire Roses",
-    price: "₱150",
+    price: "₱135",
     image: bouquetLargeRed1,
     isLatest: true,
     tag: "New",
@@ -140,7 +149,7 @@ export const BOUQUET_PRODUCTS = [
     id: 6,
     name: "Golden Sunshine Bouquet",
     subtitle: "Lush Yellow Fuzzy Wire Florals",
-    price: "₱100",
+    price: "₱85",
     image: bouquetLargeYellow1,
     isLatest: true,
     tag: "New",
@@ -168,6 +177,142 @@ export const BOUQUET_PRODUCTS = [
       dimensions: "approx. 32 cm (H) × 14 cm (W)",
       craftTime: "2 Hours of handcrafting",
       bloomType: "Dual-Tone Bouquet",
+    },
+  },
+  {
+    id: 8,
+    name: "Tangerine Glow & Tulip Delight",
+    subtitle: "Vibrant handcrafted chenille bloom arrangement",
+    price: "₱180",
+    image: bouquetOrangeLilyPinkTulip,
+    isLatest: true,
+    tag: "New",
+    description:
+      "A radiant pipe cleaner bouquet showcasing an eye-catching bright orange lily centerpiece accompanied by a soft pastel pink tulip, chocolate velvet foliage accents, and miniature filler blossoms wrapped in two-tone pink and sky-blue matte paper.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 14 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Orange Lily, Pink Tulip, White Mini Daisies",
+    },
+  },
+  {
+    id: 9,
+    name: "Golden Sunrise & Sweet Tulip",
+    subtitle: "Warm pastel chenille floral arrangement",
+    price: "₱180",
+    image: bouquetYellowLilyPinkTulip,
+    isLatest: true,
+    tag: "New",
+    description:
+      "Features a luminous yellow-gold lily blossom paired with a gentle pink tulip, miniature white daisies, and dainty pom-pom sprigs, delicately wrapped in layered blush pink paper tied with an iridescent ribbon.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 14 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Yellow Lily, Pink Tulip, Daisies, White Berries",
+    },
+  },
+  {
+    id: 10,
+    name: "Amber Sunburst Charm",
+    subtitle: "Classic handmade velvet sunflower bouquet",
+    price: "₱99",
+    image: bouquetSunflowerMiniDaisy,
+    isLatest: true,
+    tag: "New",
+    description:
+      "A cheerful handmade sunflower bouquet centered around a bright orange-gold sunflower with a deep chocolate brown center, flanked by deep brown velvet leaves, white pip blossoms, and wrapped in delicate pink wrapping paper.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 14 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Sunflower, Mini Blossoms, Brown Accent Foliage",
+    },
+  },
+  {
+    id: 11,
+    name: "Golden Gerbera Radiance",
+    subtitle: "Multi-petaled textured chenille gerbera bouquet",
+    price: "₱99",
+    image: bouquetOrangeGerberaPink,
+    isLatest: true,
+    tag: "New",
+    description:
+      "Spotlights an intricately crafted, dense-petaled bright orange gerbera daisy complemented by espresso floral picks, white pom-pom stems, and rolled soft pink wrapper cones finished with an organza bow.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 14 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Gerbera Daisy, Brown Accent Florets, White Sprigs",
+    },
+  },
+  {
+    id: 12,
+    name: "Citrus Garden Medley",
+    subtitle: "Playful floral mix in lilac and pastel tones",
+    price: "₱99",
+    image: bouquetOrangeGerberaViolet,
+    isLatest: true,
+    tag: "New",
+    description:
+      "A rich floral presentation featuring a bright orange gerbera daisy accompanied by white center-yellow daisies, velvet leaf sprays, and rolled lilac accents wrapped in smooth pastel pink folds.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 14 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Orange Daisy, White Daisies, Velvet Leaves",
+    },
+  },
+  {
+    id: 13,
+    name: "Azure Dream Bellflower",
+    subtitle: "Calming pastel blue chenille floral bundle",
+    price: "₱199",
+    image: bouquetBlueBellFlower,
+    isLatest: true,
+    tag: "New",
+    description:
+      "An enchanting cool-toned design highlighted by a velvety sky-blue open bell blossom, a matching royal blue closed tulip bud, mini white daisy sprigs, and crisp baby-blue cone wrapping paper.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 14 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Blue Bellflower, Blue Tulip, Mini Daisies, White Sprigs",
+    },
+  },
+  {
+    id: 14,
+    name: "Royal Lavender Symphony",
+    subtitle: "Lush multi-textured purple botanical arrangement",
+    price: "₱199",
+    image: bouquetLavenderCarnation,
+    isLatest: true,
+    tag: "New",
+    description:
+      "A full, luxurious purple ensemble composed of a ruffled lavender carnation/peony, a soft purple tulip, a fuzzy lavender stalk, and white accent bud stems wrapped in royal lilac matte paper.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 14 cm (W)",
+      craftTime: "2.5 Hours of handcrafting",
+      bloomType: "Lavender Carnation, Purple Tulip, Lavender Sprig, Accent Buds",
+    },
+  },
+  {
+    id: 15,
+    name: "Ocean Breeze & Golden Lily",
+    subtitle: "Contrasting warm and cool tone artisan bouquet",
+    price: "₱180",
+    image: bouquetYellowLilyBlueTulip,
+    isLatest: true,
+    tag: "New",
+    description:
+      "A vibrant color-blocked bouquet featuring an open golden-yellow lily centerpiece, a deep royal blue tulip bud, fuzzy blue stems, and cheerful mini white daisies, encased in pastel sky-blue wrapping.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 14 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Yellow Lily, Blue Tulip, Blue Sprig, Mini Daisies",
     },
   },
 ];
