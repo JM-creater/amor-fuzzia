@@ -17,6 +17,9 @@ import bouquetSmallTulips2 from "../screens/bouquet-screen/assets/bouquet-images
 import bouquetSmallTulips3 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_tulips_3.jpg";
 import bouquetSmallYellow1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_yellow_1.jpg";
 import bouquetSmallYellowSunflower1 from "../screens/bouquet-screen/assets/bouquet-images/bouquet_small_yellow_sunflower_1.jpg";
+import bouquetSunflowerPearlGoldTrim from "../screens/bouquet-screen/assets/bouquet-images/sunflower-pearl-gold-trim.jpg";
+import bouquetGerberaDaisySlenderWrap from "../screens/bouquet-screen/assets/bouquet-images/gerbera-daisy-slender-wrap.jpg";
+import bouquetGerberaDaisyFanWrap from "../screens/bouquet-screen/assets/bouquet-images/gerbera-daisy-fan-wrap.jpg";
 
 import bouquetOrangeLilyPinkTulip from "../screens/bouquet-screen/assets/bouquet-images/orange-lily-pink-tulip.jpg";
 import bouquetYellowLilyPinkTulip from "../screens/bouquet-screen/assets/bouquet-images/yellow-lily-pink-tulip.jpg";
@@ -115,7 +118,7 @@ export const BOUQUET_PRODUCTS = [
     id: 4,
     name: "Royal Azure Bouquet",
     subtitle: "Vibrant Blue Artisan Arrangement",
-    price: "₱100",
+    price: "₱85",
     image: bouquetLargeBlue1,
     isLatest: true,
     tag: "New",
@@ -149,7 +152,7 @@ export const BOUQUET_PRODUCTS = [
     id: 6,
     name: "Golden Sunshine Bouquet",
     subtitle: "Lush Yellow Fuzzy Wire Florals",
-    price: "₱85",
+    price: "₱99",
     image: bouquetLargeYellow1,
     isLatest: true,
     tag: "New",
@@ -166,7 +169,7 @@ export const BOUQUET_PRODUCTS = [
     id: 7,
     name: "Violet & Ivory Blossom",
     subtitle: "Two-Tone Handcrafted Elegance",
-    price: "₱100",
+    price: "₱85",
     image: bouquetLargePurpleWhite1,
     isLatest: true,
     tag: "New",
@@ -313,6 +316,57 @@ export const BOUQUET_PRODUCTS = [
       dimensions: "approx. 32 cm (H) × 14 cm (W)",
       craftTime: "2 Hours of handcrafting",
       bloomType: "Yellow Lily, Blue Tulip, Blue Sprig, Mini Daisies",
+    },
+  },
+  {
+    id: 16,
+    name: "Golden Sunflower & Pearl Sprig",
+    subtitle: "Elegant gold-trimmed artisan pipe cleaner bouquet",
+    price: "₱99",
+    image: bouquetSunflowerPearlGoldTrim,
+    isLatest: true,
+    tag: "New",
+    description:
+      "A radiant pipe cleaner sunflower bouquet showcasing a textured yellow-orange bloom with a deep brown center, accompanied by soft white pearl-accented blossoms, espresso velvet foliage, and layered frosted white wrapping finished with a metallic gold rim and 'JUST FOR YOU' ribbon.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 14 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Sunflower, Pearl Mini Florets, Brown Velvet Foliage",
+    },
+  },
+  {
+    id: 17,
+    name: "Sunlit Gerbera & Petite Daisy",
+    subtitle: "Modern slim silhouette in gold-rimmed frosted paper",
+    price: "₱99",
+    image: bouquetGerberaDaisySlenderWrap,
+    isLatest: true,
+    tag: "New",
+    description:
+      "A bright orange velvet gerbera daisy paired with a single white-petaled daisy, deep espresso velvet leaves, and curled green foliage. Formed into a sleek, elongated silhouette and enveloped in frosted white paper with delicate gold metallic borders and an organza bow.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 13 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Gerbera Daisy, White Daisy, Velvet Leaves",
+    },
+  },
+  {
+    id: 18,
+    name: "Golden Gerbera Blossom Fan",
+    subtitle: "Flared pleat presentation with double-layer blooms",
+    price: "₱99",
+    image: bouquetGerberaDaisyFanWrap,
+    isLatest: true,
+    tag: "New",
+    description:
+      "Showcases an eye-catching, densely clustered multi-petal orange gerbera daisy accompanied by a fresh white daisy and lush velvet backing leaves. Styled with an open, fanned-out frosted wrap featuring gold piping and a shimmering champagne ribbon bow.",
+    materials: HANDMADE_BOUQUET_MATERIALS,
+    details: {
+      dimensions: "approx. 32 cm (H) × 15 cm (W)",
+      craftTime: "2 Hours of handcrafting",
+      bloomType: "Multi-Petal Gerbera, White Daisy, Brown Velvet Foliage",
     },
   },
 ];
