@@ -19,10 +19,13 @@ jobs:
           node-version: "22.13.0"
 
       - name: Install AMor Fuzzia Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build AMor Fuzzia
         run: npm run build
+
+      - name: Verify build output
+        run: ls -la dist/
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -31,3 +34,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_AMOR_FUZZIA }}
           channelId: live
           projectId: amor-fuzzia
+          entryPoint: "./dist"
