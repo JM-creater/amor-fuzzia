@@ -34,4 +34,3 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_AMOR_FUZZIA }}
           channelId: live
           projectId: amor-fuzzia
-          entryPoint: "./dist"
